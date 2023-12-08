@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			width: 100%;
+			font-family: 'Noto Sans KR', sans-serif;
+			padding: 15px;
+			text-align: center;
+			width: fit-content;
+			margin: 5px auto;
+		}
+
+		.navMenu a {
+			color: green;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #ece5f0;
+		}
+
+		.border {
+			border: 5px solid #bf2e21;
+		}
+
+		.navMenu a:hover {
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="planner" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Planner</a>
+		<a id="study" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-pencil"></i> Study</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-laptop-code"></i> Projects</a>
+		<a id="ideas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Ideas</a>
+		<a id="business" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-money-bill-wave"></i> Business</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-note-sticky"></i> Notes</a>
+		<a id="diary" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-book"></i> Diary</a>
+		<a id="gallery" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-image"></i> Gallery</a>
+		<a id="resources" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-toolbox"></i> Resources</a>
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "planner")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "study")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "projects")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "ideas")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "business")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "notes")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "diary")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "gallery")
+				window.open("https://example.com", '_blank').focus();
+			else if (id == "resources")
+				window.open("https://example.com", '_blank').focus();
+		}
+	</script>
+
+</body>
+</html>
